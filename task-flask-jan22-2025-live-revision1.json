@@ -1,0 +1,70 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:491085425762:task-definition/task-flask-jan22-2025-live:1",
+    "containerDefinitions": [
+        {
+            "name": "flask-container-jan22-2025-live",
+            "image": "491085425762.dkr.ecr.us-east-1.amazonaws.com/jan22_ecr_flask_live:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "flask-container-jan22-2025-live-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                },
+                {
+                    "name": "flask-container-jan22-2025-live-8000-tcp",
+                    "containerPort": 8000,
+                    "hostPort": 8000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "systemControls": []
+        }
+    ],
+    "family": "task-flask-jan22-2025-live",
+    "executionRoleArn": "arn:aws:iam::491085425762:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2025-01-22T16:22:52.198Z",
+    "registeredBy": "arn:aws:iam::491085425762:user/devops_user_4164966_15319",
+    "enableFaultInjection": false,
+    "tags": []
+}

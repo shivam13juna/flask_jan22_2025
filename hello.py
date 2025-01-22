@@ -16,7 +16,19 @@ def ping(): # function name doesn't
 def hello():
 	return {'message': 'Hello World!!'}
 
-
+@pancakes.route('/', methods=['GET'])
+def home():
+    return '''
+    <html>
+        <head>
+            <title>Congratulation on successful CI/CD completion</title>
+        </head>
+        <body>
+            <h1>Congratulation on successful CI/CD completion, Good going guys!!</h1>
+            <p>MLOPS Engineer on the rise!!.</p>
+        </body>
+    </html>
+    '''
 
 model_pickle = open("classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
