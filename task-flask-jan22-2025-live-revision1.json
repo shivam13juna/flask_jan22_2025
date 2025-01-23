@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:491085425762:task-definition/task-flask-jan22-2025-live:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:869935065581:task-definition/task-flask-jan22-2025-live:1",
     "containerDefinitions": [
         {
             "name": "flask-container-jan22-2025-live",
-            "image": "491085425762.dkr.ecr.us-east-1.amazonaws.com/jan22_ecr_flask_live:latest",
+            "image": "869935065581.dkr.ecr.us-east-1.amazonaws.com/jan22_ecr_flask_live:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -30,7 +30,7 @@
         }
     ],
     "family": "task-flask-jan22-2025-live",
-    "executionRoleArn": "arn:aws:iam::491085425762:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::869935065581:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],
@@ -63,8 +63,8 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-01-22T16:22:52.198Z",
-    "registeredBy": "arn:aws:iam::491085425762:user/devops_user_4164966_15319",
+    "registeredAt": "2025-01-23T03:07:50.104Z",
+    "registeredBy": "arn:aws:iam::869935065581:user/devops_user_4164966_15429",
     "enableFaultInjection": false,
     "tags": []
 }
