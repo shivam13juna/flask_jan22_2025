@@ -19,7 +19,7 @@ COPY . .
 # CMD [ "python3", "flask", "run", "--host=0.0.0.0"] 
 
 # python3 flask --app app.py run
-CMD ["python", "-m","flask", "--app", "app.py", "run", "--host=0.0.0.0", "--port=8000"]
+CMD ["python", "-m","flask", "--app", "hello.py", "run", "--host=0.0.0.0", "--port=8000"]
 
 #  python3 -m flask run --host=0.0.0.0
 # here host can be any ip address
